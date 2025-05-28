@@ -1,0 +1,169 @@
+@import "tailwindcss";
+
+
+@font-face {
+  font-family: "Alegreya";
+  src: url("./assets/fonts/Alegreya-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+@font-face {
+  font-family: "Alegreya";
+  src: url("./assets/fonts/Alegreya-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Kollektif";
+  src: url("./assets/fonts/kollektif/Kollektif.ttf") format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Kollektif";
+  src: url("./assets/fonts/kollektif/Kollektif-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Tanker';
+  src: url('./assets/Fonts/Tanker/Tanker-Regular.woff2') format('woff2'),
+    url('./assets/Fonts/Tanker/Tanker-Regular.woff') format('woff'),
+    url('./assets/Fonts/Tanker/Tanker-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Melodrama-Regular';
+  src: url('./assets/Fonts/Melodrama/Melodrama-Medium.woff2') format('woff2'),
+    url('./assets/Fonts/Melodrama/Melodrama-Regular.woff') format('woff'),
+    url('./assets/Fonts/Melodrama/Melodrama-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Melodrama-Medium';
+  src: url('./assets/Fonts/Melodrama/Melodrama-Medium.woff2') format('woff2'),
+    url('./assets/Fonts/Melodrama/Melodrama-Medium.woff') format('woff'),
+    url('./assets/Fonts/Melodrama/Melodrama-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+
+
+
+
+@font-face {
+  font-family: "Satoshi-Regular";
+  src:
+    url("./assets/fonts/satoshi/Satoshi-Regular.woff2") format("woff2"),
+    url("./assets/fonts/satoshi/Satoshi-Regular.woff") format("woff"),
+    url("./assets/fonts/satoshi/Satoshi-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Satoshi-Medium";
+  src: url("./assets/fonts/satoshi/Satoshi-Medium.woff2") format("woff2"),
+    url("./assets/fonts/satoshi/Satoshi-Medium.woff") format("woff"),
+    url("./assets/fonts/satoshi/Satoshi-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Satoshi-Bold';
+  src: url('./assets/fonts/satoshi/Satoshi-Bold.woff2') format('woff2'),
+    url('./assets/fonts/satoshi/Satoshi-Bold.woff') format('woff'),
+    url('./assets/fonts/satoshi/Satoshi-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Satoshi";
+  src: url("https://fonts.cdnfonts.com/css/satoshi");
+  font-weight: 400;
+  font-display: swap;
+}
+
+
+
+
+@theme {
+  --font-alegreya: 'Alegreya', serif;
+  --font-kollektif: 'Kollektif', serif;
+  --font-Tanker: 'Tanker', serif;
+
+  /* Melodrama */
+  --font-melodrama-regular: 'Melodrama-Regular', serif;
+  --font-melodrama-medium: 'Melodrama-Medium', serif;
+
+  /* Satoshi */
+  --font-satoshi: "Satoshi", sans-serif;
+  --font-satoshi-regular: 'Satoshi-Regular', sans-serif;
+  --font-satoshi-medium: 'Satoshi-Medium', sans-serif;
+  --font-satoshi-bold: 'Satoshi-Bold', sans-serif;
+}
+
+
+/* Ultra thin transparent scrollbar - vertical */
+::-webkit-scrollbar {
+  width: 4px;
+  /* Vertical scrollbar width */
+  height: 4px;
+  /* Horizontal scrollbar height */
+  cursor: pointer;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+  /* Transparent track */
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.2);
+  /* Light transparent thumb */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.4);
+  /* Darker on hover */
+}
+
+/* Firefox and other browsers */
+.scrollable {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 0, 0, 0.2) rgba(255, 255, 255, 0.1);
+}
+
+/* Horizontal scrollbar specific styling */
+::-webkit-scrollbar:horizontal {
+  height: 4px;
+  /* Horizontal scrollbar height */
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+  background: rgba(0, 0, 0, 0.2);
+  /* Horizontal thumb styling */
+}
+
+::-webkit-scrollbar-thumb:horizontal:hover {
+  background: rgba(0, 0, 0, 0.4);
+  /* Darker on hover */
+}

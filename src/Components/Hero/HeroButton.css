@@ -1,0 +1,90 @@
+/* hero button  */
+.hero-button {
+  position: relative;
+  overflow: hidden;
+}
+
+/* arrow-right icon styling */
+.arrow-right {
+  display: inline-block;
+  opacity: 0;
+  transform: translateX(0);
+}
+
+.raise-glass-icon {
+  display: inline-block;
+  position: relative;
+  opacity: 0;
+  transform: translateX(-130px) rotate(80deg);
+}
+
+/* 0.5s is just an example; adjust as needed */
+.hero-button:hover .raise-glass-icon {
+  animation: raise-glass-rightOut 0.5s ease 0.12s forwards;
+}
+
+/* When not hovered, trigger the arrow-rightIn animation:
+     arrow-right comes in smoothly from the left */
+.hero-button:not(:hover) .raise-glass-icon {
+  animation: raise-glass-rightIn 0.5s ease forwards;
+}
+
+/* When hovered, trigger the arrow-rightOut animation:
+     arrow-right slides right and fades out */
+.hero-button:hover .arrow-right {
+  animation: arrow-rightOut 0.5s ease forwards;
+}
+
+/* When not hovered, trigger the arrow-rightIn animation:
+     arrow-right comes in smoothly from the left */
+.hero-button:not(:hover) .arrow-right {
+  animation: arrow-rightIn 0.5s ease 0.12s forwards;
+}
+
+/* Keyframes for the raise-glass icon hover state (moving in, rotating from 80 to 0) */
+@keyframes raise-glass-rightOut {
+  from {
+    transform: translateX(-130px) rotate(80deg);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0px) rotate(0deg);
+    opacity: 1;
+  }
+}
+
+/* Keyframes for the raise-glass icon returning to initial state (moving out, rotating back to 80) */
+@keyframes raise-glass-rightIn {
+  from {
+    transform: translateX(0px) rotate(0deg);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(-130px) rotate(80deg);
+    opacity: 0;
+  }
+}
+
+/* Keyframes for the arrow-right leaving (hover state) */
+@keyframes arrow-rightOut {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(150px);
+    opacity: 0;
+  }
+}
+
+/* Keyframes for the arrow-right entering (mouse leave) */
+@keyframes arrow-rightIn {
+  from {
+    transform: translateX(150px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

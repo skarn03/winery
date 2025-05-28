@@ -1,0 +1,7 @@
+.clip-half-right {
+  clip-path: inset(0 50% 0 0); /* Hide the left half */
+  background-color: black; /* Match the background */
+}
+.clip-right {
+  clip-path: inset(0 0 0 10%);
+}

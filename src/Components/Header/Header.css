@@ -1,0 +1,31 @@
+.underline-animate {
+  position: relative;
+  display: inline-block;
+}
+
+.underline-animate::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px; /* Adjust based on your design */
+  width: 100%;
+  height: 2px; /* Thickness of the underline */
+  transform: scaleX(0); /* Start with no underline */
+  transform-origin: left;
+  transition: transform 0.3s ease-in-out; /* Smooth transition */
+}
+
+.underline-animate:hover::after {
+  transform: scaleX(1); /* Expand underline on hover */
+  transform-origin: left;
+  background-color: white;
+
+}
+
+.underline-animate:not(:hover)::after {
+  transform: scaleX(0); /* Collapse underline when not hovering */
+  transform-origin: right;
+  transition: transform 0.3s ease-in-out; /* Smooth transition */
+  background-color: white;
+
+}

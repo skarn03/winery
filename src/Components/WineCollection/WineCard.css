@@ -1,0 +1,45 @@
+/* --------------------
+    wine card
+   --------------------
+*/
+
+.wine-card {
+  transition: background-color 0.5s ease;
+}
+
+/* --------------------
+    wine card image
+   --------------------
+*/
+
+.wine-card-image {
+  transition: transform 0.5s ease;
+}
+
+.wine-card:hover {
+  background-color: #f8e5b2;
+}
+
+/* --------------------
+    wine card button
+   --------------------
+*/
+
+.wine-card:hover .wine-card-image {
+  transform: scale(0.9) translateY(-10px);
+}
+
+.wine-card-button {
+  transition: all 0.5s ease;
+}
+
+.wine-card-button {
+  opacity: 1;
+  bottom: 0;
+  transform: translateY(0px);
+}
+
+.wine-card:hover .wine-card-button{
+    opacity: 0;
+    transform: translateY(-20px);
+}

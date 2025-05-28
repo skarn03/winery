@@ -1,0 +1,45 @@
+.overlay-backdrop {
+  background-color: #0000004d;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px); /* Safari compatibility */
+  
+}
+
+
+/* Modal content with smooth pop-up animation */
+.modal-content {
+  animation: popUp 0.3s forwards;
+}
+
+/* Pop-up animation when opening */
+@keyframes popUp {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Fade-out and scale-down animation when closing */
+.modal-content.closing {
+  animation: popDown 0.3s forwards;
+}
+
+@keyframes popDown {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+}
+
+.modal-overlay {
+  /* This class is used for modal overlay background, styling handled by Tailwind */
+  cursor: pointer;
+}

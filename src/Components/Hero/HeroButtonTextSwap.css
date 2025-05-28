@@ -1,0 +1,64 @@
+/* text-container styling */
+.hero-text-container {
+  position: relative; /* needed for absolutely positioned children */
+  display: inline-block; /* so the container wraps to its content */
+  vertical-align: middle; /* or 'top' if you prefer */
+  /* removed width & height so it auto-sizes to text */
+  min-width: 150px;
+  height: 21px;
+}
+
+/* Both texts stacked in the same spot */
+.hero-text-default,
+.hero-text-hover {
+  position: absolute; /* stack directly on top of each other */
+  top: 0;
+  left: 0;
+  width: 100%; /* match container width */
+  font-weight: bold;
+  color: #1c272c;
+}
+
+/* Initial animations (default text visible, hover text hidden) */
+.hero-text-default {
+  animation: fadeIn 0.5s ease forwards;
+}
+.hero-text-hover {
+  animation: fadeOut 0.5s ease forwards;
+}
+
+/* Fade logic on hover: 
+     .hero-text-default fades out, .hero-text-hover fades in */
+.hero-button:hover .hero-text-default {
+  animation: fadeOut 0.5s ease forwards;
+}
+.hero-button:hover .hero-text-hover {
+  animation: fadeIn 0.5s ease forwards;
+}
+
+/* When not hovered, go back to default:
+     .hero-text-default fades in, .hero-text-hover fades out */
+.hero-button:not(:hover) .hero-text-default {
+  animation: fadeIn 0.5s ease forwards;
+}
+.hero-button:not(:hover) .hero-text-hover {
+  animation: fadeOut 0.5s ease forwards;
+}
+
+/* Keyframes for fadeIn/fadeOut */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}

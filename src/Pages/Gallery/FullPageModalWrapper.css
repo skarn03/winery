@@ -1,0 +1,70 @@
+/* Full-screen modal styling */
+.fullpage-modal {
+  background-color: white;
+  width: 100vw;
+  height: 100vh;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  position: relative;
+  animation: openFullPage 0.3s ease-out forwards;
+  overflow-y: hidden;
+  box-sizing: border-box;
+  
+}
+
+/* Open animation */
+@keyframes openFullPage {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Close animation */
+.modal-closing {
+  animation: closeFullPage 0.3s ease-in forwards;
+}
+
+@keyframes closeFullPage {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+}
+
+/* Fade-in animation for background */
+.fade-in {
+  animation: fadeIn 0.3s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Fade-out animation for background */
+.fade-out {
+  animation: fadeOut 0.3s ease-in forwards;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
