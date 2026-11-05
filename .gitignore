@@ -10,6 +10,7 @@ init.ps1
 
 node_modules
 dist
+build
 dist-ssr
 *.local
 /.env

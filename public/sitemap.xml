@@ -1,61 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
-  <url>
-    <loc>https://unitedwinery.com/</loc>
-    <lastmod>2025-03-28</lastmod>
-    <priority>1.00</priority>
-  </url>
-
-  <url>
-    <loc>https://unitedwinery.com/Collection</loc>
-    <lastmod>2025-03-28</lastmod>
-    <priority>0.90</priority>
-  </url>
-
-  <url>
-    <loc>https://unitedwinery.com/Aboutus</loc>
-    <lastmod>2025-03-28</lastmod>
-    <priority>0.85</priority>
-  </url>
-
-  <url>
-    <loc>https://unitedwinery.com/EnquiryForm</loc>
-    <lastmod>2025-03-28</lastmod>
-    <priority>0.80</priority>
-  </url>
-
-  <url>
-    <loc>https://unitedwinery.com/Gallery</loc>
-    <lastmod>2025-03-28</lastmod>
-    <priority>0.80</priority>
-  </url>
-
-  <url>
-    <loc>https://unitedwinery.com/Galleryv4</loc>
-    <lastmod>2025-03-28</lastmod>
-    <priority>0.75</priority>
-  </url>
-
-  <url>
-    <loc>https://unitedwinery.com/Galleryv5</loc>
-    <lastmod>2025-03-28</lastmod>
-    <priority>0.75</priority>
-  </url>
-
-  <url>
-    <loc>https://unitedwinery.com/Blog</loc>
-    <lastmod>2025-03-28</lastmod>
-    <priority>0.85</priority>
-  </url>
-
-  <!-- Optional: Add actual blog post URLs here -->
-  <!--
-  <url>
-    <loc>https://unitedwinery.com/Blog/wine-benefits</loc>
-    <lastmod>2025-03-28</lastmod>
-    <priority>0.80</priority>
-  </url>
-  -->
-
+  <url><loc>https://unitedwinery.com/</loc></url>
+  <url><loc>https://unitedwinery.com/collection</loc></url>
+  <url><loc>https://unitedwinery.com/wines/royals-red</loc></url>
+  <url><loc>https://unitedwinery.com/wines/royals-white</loc></url>
+  <url><loc>https://unitedwinery.com/wines/royals-rose</loc></url>
+  <url><loc>https://unitedwinery.com/wines/godawari-red</loc></url>
+  <url><loc>https://unitedwinery.com/wines/godawari-white</loc></url>
+  <url><loc>https://unitedwinery.com/story</loc></url>
+  <url><loc>https://unitedwinery.com/winery</loc></url>
+  <url><loc>https://unitedwinery.com/journal</loc></url>
+  <url><loc>https://unitedwinery.com/gallery</loc></url>
+  <url><loc>https://unitedwinery.com/contact</loc></url>
 </urlset>

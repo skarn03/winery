@@ -1,0 +1,18 @@
+.heritage-section{display:grid;grid-template-columns:.9fr 1.1fr;min-height:630px;background:#2b0d18;color:#f4e9de}
+.heritage-year{position:relative;overflow:hidden;padding:clamp(45px,6vw,95px);display:flex;flex-direction:column;justify-content:space-between;background:radial-gradient(circle at 40% 48%,#563044,#240b17 70%)}
+.heritage-year:after{content:"";position:absolute;width:500px;height:500px;border:1px solid rgba(214,180,147,.17);border-radius:50%;left:50%;top:50%;transform:translate(-50%,-50%)}
+.heritage-year span,.heritage-year small{font-size:10px;letter-spacing:.2em;color:#d6b9a8;position:relative;z-index:1}
+.heritage-year strong{font-family:Melodrama,Georgia,serif;font-size:clamp(135px,17vw,280px);font-weight:400;line-height:1;letter-spacing:-.09em;color:#dcc5ad;position:relative;z-index:1}
+.heritage-copy{padding:clamp(55px,8vw,130px);display:flex;flex-direction:column;align-items:flex-start;justify-content:center}
+.heritage-copy h2{font-size:clamp(55px,6vw,94px);margin-bottom:32px}
+.heritage-copy>p:not(.eyebrow){max-width:510px;color:#dccad0;font-size:16px;margin-bottom:32px}
+.distribution-section{display:grid;grid-template-columns:1fr 1fr;gap:8vw;background:#e9dfd3}
+.distribution-section h2{margin-bottom:28px}
+.distribution-section p:not(.eyebrow){max-width:440px;color:#655951;margin-bottom:30px}
+.distribution-list{border-top:1px solid #b9a899;align-self:center}
+.distribution-list .eyebrow{padding-top:25px;margin-bottom:35px}
+.distribution-list>div{border-bottom:1px solid #b9a899;padding:22px 4px;display:grid;grid-template-columns:60px 1fr;align-items:center}
+.distribution-list span{font-size:11px;color:#947a68;letter-spacing:.16em}
+.distribution-list strong{font-family:Melodrama,Georgia,serif;font-size:clamp(28px,3vw,44px);font-weight:400}
+.feature-photo img{object-position:50% 44%}
+@media(max-width:760px){.heritage-section,.distribution-section{grid-template-columns:1fr}.heritage-year{min-height:380px;padding:35px 24px}.heritage-year strong{font-size:clamp(130px,32vw,200px)}.heritage-copy{padding:75px 24px}.distribution-section{gap:55px}.distribution-list strong{font-size:30px}}
