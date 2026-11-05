@@ -1,0 +1,38 @@
+/* Product-specific stages keep each wine's bottle distinct */
+.product-stage{position:relative;isolation:isolate;display:grid;place-items:center;width:100%;height:100%;overflow:hidden}
+.product-stage:before{content:"";position:absolute;left:50%;top:46%;width:72%;aspect-ratio:1;border-radius:50%;transform:translate(-50%,-50%);z-index:0;opacity:.72}
+.product-stage:after{content:"";position:absolute;left:50%;bottom:6%;width:47%;height:20px;transform:translateX(-50%);border-radius:50%;background:rgba(20,10,14,.25);filter:blur(14px);z-index:0}
+.product-stage .product-stage-halo{position:absolute;inset:0;z-index:0;background:linear-gradient(130deg,rgba(255,255,255,.14),transparent 43%)}
+.product-stage>img{position:relative;z-index:1;display:block;width:auto;height:84%;max-width:78%;object-fit:contain;object-position:center;filter:drop-shadow(15px 22px 13px rgba(21,7,14,.28));transition:transform .75s cubic-bezier(.2,.8,.2,1),filter .75s ease}
+.product-stage:hover>img,.home-wine:hover .product-stage>img,.wine-card-photo:hover .product-stage>img,.next-wine-grid a:hover .product-stage>img{transform:translateY(-13px) scale(1.035);filter:drop-shadow(19px 28px 15px rgba(21,7,14,.3))}
+.product-stage-royals-red{background:radial-gradient(circle at 50% 43%,#6e3548 0%,#3d1523 44%,#230b17 100%);color:#f5e9e0}
+.product-stage-royals-red:before{background:radial-gradient(circle,rgba(188,108,123,.47),transparent 67%)}
+.product-stage-royals-white{background:radial-gradient(circle at 50% 40%,#fff8e9 0%,#e7d2ac 52%,#c6a775 100%);color:#44311e}
+.product-stage-royals-white:before{background:radial-gradient(circle,rgba(255,255,236,.95),transparent 70%)}
+.product-stage-royals-rose{background:radial-gradient(circle at 50% 40%,#b76e79 0%,#7b3347 50%,#3e1829 100%);color:#fff0e9}
+.product-stage-royals-rose:before{background:radial-gradient(circle,rgba(255,193,182,.55),transparent 69%)}
+.wine-card-photo .product-stage,.wine-card-photo .product-stage-halo{position:relative;top:auto;left:auto;font-size:inherit;letter-spacing:normal}
+.wine-card-photo .product-stage-halo{position:absolute;inset:0}
+.home-wine-photo .product-stage,.wine-card-photo .product-stage{height:100%}
+.home-wine-photo .product-stage>img,.wine-card-photo .product-stage>img{height:84%;width:auto;max-width:78%;object-fit:contain}
+.home-wine-photo .product-stage:after,.wine-card-photo .product-stage:after{bottom:5%}
+.modal>.modal-product-visual{padding:0;display:block;min-height:470px;height:100%;overflow:hidden}
+.modal-product-visual>.product-stage{min-height:470px}
+.modal-product-visual>img{width:100%;height:100%;min-height:470px;object-fit:cover}
+.modal-product-visual .photo-placeholder{min-height:470px}
+.next-wine-visual{height:360px;overflow:hidden}
+.next-wine-visual>.product-stage{height:100%}
+.next-wine-visual .product-stage{display:grid;padding:0;font-family:inherit;font-size:inherit}
+.next-wine-visual .product-stage-halo{display:block;padding:0}
+.next-wine-visual .product-stage>img{height:86%;width:auto;max-width:78%;object-fit:contain}
+.next-wine-visual>img{width:100%;height:100%;object-fit:cover}
+.next-wine-visual .photo-placeholder{height:100%}
+.wine-detail-royals-red .wine-detail-image{background:radial-gradient(circle at 50% 42%,#704053,#2c0f1e 70%)}
+.wine-detail-royals-white .wine-detail-image{background:radial-gradient(circle at 50% 42%,#fff8e9,#c9a77b 72%)}
+.wine-detail-royals-rose .wine-detail-image{background:radial-gradient(circle at 50% 42%,#bd7580,#4e1d32 75%)}
+.wine-detail-royals-white .detail-number{color:#4a3128}
+.rose-label-details{padding:18px 0}.rose-label-details p{font-size:13px;line-height:1.65}.rose-label-details a{font-size:12px;color:#772c43;text-decoration:underline;text-underline-offset:4px}
+.additional-product{background:#e7ddd0;border-top:1px solid #c9baa9}.additional-product>div{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start}.additional-product h2{font-size:clamp(48px,6vw,92px);margin:8px 0}.additional-product p:not(.eyebrow){font-size:15px;line-height:1.7;color:#60534b}.additional-product span{display:inline-block;margin-top:15px;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#7b3248}
+@media(max-width:760px){.additional-product>div{grid-template-columns:1fr;gap:10px}}
+@media(max-width:760px){.modal>.modal-product-visual,.modal-product-visual>.product-stage,.modal-product-visual>img,.modal-product-visual .photo-placeholder{min-height:310px;height:310px}.product-stage>img{height:86%}.next-wine-visual{height:300px}}
+@media(prefers-reduced-motion:reduce){.product-stage>img{transition:none!important}}
