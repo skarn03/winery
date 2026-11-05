@@ -31,6 +31,9 @@
 .wine-detail-royals-white .wine-detail-image{background:radial-gradient(circle at 50% 42%,#fff8e9,#c9a77b 72%)}
 .wine-detail-royals-rose .wine-detail-image{background:radial-gradient(circle at 50% 42%,#bd7580,#4e1d32 75%)}
 .wine-detail-royals-white .detail-number{color:#4a3128}
+.wine-detail-content-godawari-red h1,.wine-detail-content-godawari-white h1{font-size:clamp(47px,5vw,86px)}
+.wine-detail-content-royals-rose h1{font-size:clamp(54px,6vw,102px)}
+.modal h2{font-size:clamp(38px,4vw,65px)}
 .rose-label-details{padding:18px 0}.rose-label-details p{font-size:13px;line-height:1.65}.rose-label-details a{font-size:12px;color:#772c43;text-decoration:underline;text-underline-offset:4px}
 .additional-product{background:#e7ddd0;border-top:1px solid #c9baa9}.additional-product>div{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start}.additional-product h2{font-size:clamp(48px,6vw,92px);margin:8px 0}.additional-product p:not(.eyebrow){font-size:15px;line-height:1.7;color:#60534b}.additional-product span{display:inline-block;margin-top:15px;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#7b3248}
 @media(max-width:760px){.additional-product>div{grid-template-columns:1fr;gap:10px}}
